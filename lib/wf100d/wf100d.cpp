@@ -29,7 +29,7 @@ float getPression()
     Wire.endTransmission(false);
 
     Wire.beginTransmission(WF100D_ADDRESS);
-    Wire.requestFrom(WF100D_ADDRESS, (uint8_t)3, 1);
+    Wire.requestFrom(WF100D_ADDRESS, (uint8_t)3, (uint8_t)1);
     high = Wire.read();
     med = Wire.read();
     low = Wire.read();
