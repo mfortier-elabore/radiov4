@@ -5,12 +5,13 @@
 #include <RadioLib.h>
 
 // Radio configuration
-#define RADIO_FREQ 868.0        // Frequency in MHz (EU868)
+#define RADIO_FREQ 433.0        // Frequency in MHz (433)
 #define RADIO_BW 125.0          // Bandwidth in kHz
 #define RADIO_SF 9              // Spreading Factor (7-12)
 #define RADIO_CR 7              // Coding Rate (5-8)
 #define RADIO_SYNC_WORD 0x12    // Sync word
 #define RADIO_POWER 14          // Output power in dBm
+#define RADIO_TCXO_VOLTAGE 1.7  // TCXO voltage for Nucleo-WL55JC
 
 // Radio states
 enum RadioState {
